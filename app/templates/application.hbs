@@ -1,56 +1,56 @@
-<div class="wrapper">
-  <!--
-  <table>
-    {{#each items as |item index|}}
-      <tr class="item">
-        <td>{{index}}</td>
-        <td>{{item.name}}</td>
-      </tr>
-    {{/each}}
-  </table>
-  -->
+<!-- <div class="wrapper"></div> -->
 
-  <!--
-  <table>
-    {{#vertical-collection items
-      containerSelector="body"
-      tagName="tbody"
-      estimateHeight=100
-      staticHeight=true
-      bufferSize=0
-      as |item index|}}
-      <tr class="item">
-        <td>{{index}}</td>
-        <td>{{item.name}}</td>
-      </tr>
-    {{/vertical-collection}}
-  </table>
-  -->
+<!--
+<table>
+  {{#each items as |item index|}}
+    <tr class="item">
+      <td>{{index}}</td>
+      <td>{{item.name}}</td>
+    </tr>
+  {{/each}}
+</table>
+-->
 
-  <!--
+<!--
+<table>
   {{#vertical-collection items
     containerSelector="body"
-    tagName="div"
+    tagName="tbody"
     estimateHeight=100
     staticHeight=true
     bufferSize=0
     as |item index|}}
-    <div class="item">
-      <span>{{index}}</span>
-      <span>{{item.name}}</span>
-    </div>
+    <tr class="item">
+      <td>{{index}}</td>
+      <td>{{item.name}}</td>
+    </tr>
   {{/vertical-collection}}
-  -->
+</table>
+-->
 
-  {{#vertical-collection items
-    containerSelector=".wrapper"
-    tagName="div"
-    estimateHeight=100
-    staticHeight=true
-    bufferSize=0
-    as |item index|}}
-    <div class="item">
-      {{index}} {{item.name}}
-    </div>
-  {{/vertical-collection}}
-</div>
+<!--
+{{#vertical-collection items
+  containerSelector="body"
+  tagName="div"
+  estimateHeight=100
+  staticHeight=true
+  bufferSize=0
+  as |item index|}}
+  <div class="item">
+    <span>{{index}}</span>
+    <span>{{item.name}}</span>
+  </div>
+{{/vertical-collection}}
+-->
+
+{{#vertical-collection items
+  containerSelector="body"
+  tagName="div"
+  estimateHeight=100
+  staticHeight=true
+  bufferSize=0
+  as |item index|}}
+  <div class="item">
+    {{index}} {{item.name}}
+  </div>
+{{/vertical-collection}}
