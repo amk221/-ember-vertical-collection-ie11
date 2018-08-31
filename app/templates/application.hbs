@@ -3,15 +3,14 @@
 <!--
 <table>
   {{#each items as |item index|}}
-    <tr class="item">
-      <td>{{index}}</td>
-      <td>{{item.name}}</td>
+    <tr>
+      <td class="item">{{index}}</td>
+      <td class="item">{{item.name}}</td>
     </tr>
   {{/each}}
 </table>
 -->
 
-<!--
 <table>
   {{#vertical-collection items
     containerSelector="body"
@@ -19,14 +18,14 @@
     estimateHeight=100
     staticHeight=true
     bufferSize=0
+    occlusionTagName="tr"
     as |item index|}}
-    <tr class="item">
-      <td>{{index}}</td>
-      <td>{{item.name}}</td>
+    <tr>
+      <td class="item">{{index}}</td>
+      <td class="item">{{item.name}}</td>
     </tr>
   {{/vertical-collection}}
 </table>
--->
 
 <!--
 {{#vertical-collection items
@@ -43,14 +42,16 @@
 {{/vertical-collection}}
 -->
 
+<!--
 {{#vertical-collection items
   containerSelector="body"
   tagName="div"
   estimateHeight=100
   staticHeight=true
-  bufferSize=0
+  bufferSize=10
   as |item index|}}
   <div class="item">
     {{index}} {{item.name}}
   </div>
 {{/vertical-collection}}
+-->
