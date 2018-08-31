@@ -1,0 +1,16 @@
+.wrapper {
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.item {
+  height: 100px;
+  border: 1px solid red;
+}
